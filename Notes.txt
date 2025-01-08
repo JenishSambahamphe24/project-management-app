@@ -1,0 +1,4 @@
+ installation
+ vs code extension to lint tailwindcss class is tailwind-intellisense
+ npm i -D prettier-plugin-tailwindcss => this will automatically sort tailwindcss classes. it sorts high impact classess at first automatically
+ npm i -D tailwind-merge 
