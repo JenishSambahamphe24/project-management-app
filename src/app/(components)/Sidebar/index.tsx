@@ -8,7 +8,10 @@ const Sidebar = () => {
     const [showPriority, setShowPriority] = useState(true)
 
     const sidebarClassName = `fixed flex flex-col h-[100%] justify-between shadow-xl transition-all duration-300 h-full z-40 dark:bg-black overflow-y-auto bg-white w-64`
-
+    const myName ='jenish is fat'
+    const  splittedName = myName.split('')
+    console.log(myName[0])
+    console.log(splittedName)
     return (
         <div className={sidebarClassName}>
             <div className="flex h-[100%] w-full flex-col justify-start">
