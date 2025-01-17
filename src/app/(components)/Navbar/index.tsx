@@ -1,7 +1,13 @@
 import React from 'react'
 import { Search, Settings } from "lucide-react"
 import Link from 'next/link'
+import { useAppDispatch, useAppSelector } from '@/app/redux'
 const Navbar = () => {
+  const dispatch = useAppDispatch()
+  const isSidebarCollapsed = useAppSelector(state => state.global.isSidebarCollapsed)
+  const isdarkMode = useAppSelector(state => state.global.isdarkMode)
+
+
   return (
     <div className='flex items-center justify-between bg-white px-4 py-3 dark:bg-black '>
       {/* search bar */}
